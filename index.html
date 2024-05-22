@@ -19,7 +19,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'gradient-start': '#FF8938',
+                'gradient-end': '#F00',
               }
             }
           }
@@ -34,17 +35,17 @@
 
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-20">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
              
               <div class="space-y-6">
                 <h1 class="text-7xl font-extrabold text-[#1C1C1C]">It's good <br> 
                     tea time at The <br>Tea House</h1>
                 <p class="text-[#777777]">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
-                <button class="btn btn-primary">Explore More</button>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More<i class="fa-solid fa-arrow-right"></i></button>
               </div>
               <div>
-                <img src="images/banner.png" class="max-w-sm" />
+                <img src="images/banner.png" class="" />
                 <!-- ratings badg -->
                 <div class="-mt-20 flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60">
                     <i class="fa-solid fa-star text-3xl text-amber-400"></i>
@@ -126,12 +127,12 @@
        </section>
 
        <!-- super client section -->
-       <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+       <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
           <div class="flex items-center lg:pr-28">
             <div class="text-white space-y-5">
               <h2 class="text-5xl font-extrabold">Meet Our Super <br> Clients</h2>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-            <button class="btn btn-primary">Show All</button>
+            <button class="btn outline-none bg-white "><span class="text-orange-800">Show All</span></button>
             </div>
           </div>
           <div class="relative">
@@ -181,7 +182,7 @@
               <figure class="pt-10 px-10">
                 <img src="images/news-1.png" alt="Shoes" class="rounded-xl w-full" />
               </figure>
-              <div class="card-body">
+              <div class="card-body ml-5">
                 <p>Feb 05, 2027</p>
                 <h2 class="card-title text-2xl">Collecting 8 points for discount</h2>
                 <p>There are many variations of passages of Lorem Ipsum available.</p>
@@ -193,7 +194,7 @@
               <figure class="pt-10 px-10">
                 <img src="images/news-2.png" alt="Shoes" class="rounded-xl w-full" />
               </figure>
-              <div class="card-body">
+              <div class="card-body ml-5">
                 <p>Feb 05, 2027</p>
                 <h2 class="card-title text-2xl">Collecting 8 points for discount</h2>
                 <p>There are many variations of passages of Lorem Ipsum available.</p>
@@ -205,7 +206,7 @@
               <figure class="pt-10 px-10">
                 <img src="images/news-3.png" alt="Shoes" class="rounded-xl w-full" />
               </figure>
-              <div class="card-body">
+              <div class="card-body ml-5">
                 <p>Feb 05, 2027</p>
                 <h2 class="card-title text-2xl">Collecting 8 points for discount</h2>
                 <p>There are many variations of passages of Lorem Ipsum available.</p>
@@ -215,8 +216,54 @@
            </div>
        </section>
     </main>
-    <footer>
 
+    <!-- footer section -->
+
+    <footer class="mt-20 px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+      <div class="flex flex-col lg:flex-row lg:justify-between my-24">
+        <img src="images/cup.png" alt="">
+        <p>
+          <span class="mr-10">Ready to get started?</span>
+          <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Get Started</button>
+        </p>
+      </div>
+       <div  class="footer">
+        <nav>
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Legal</h6> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav> 
+        <form>
+          <h6 class="footer-title">Subscribe to our newsletter</h6> 
+          <fieldset class="w-80">
+            <label class="label">
+              <span class="label-text">Email address</span>
+            </label> 
+            <div class="">
+              <input type="text" placeholder="username@site.com" class=" py-4 border-b-2 border-black outline-none" /> 
+              <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white rounded-full"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </fieldset>
+        </form>
+       </div>
+      <div class="mt-4 text-center">
+        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+      </div>
     </footer>
 </body>
 
